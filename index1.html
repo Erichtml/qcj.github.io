@@ -48,26 +48,14 @@
     <center><input id="button" type="button" class="input-border" value="随机抽奖" onclick="a();"></center>
 </body>
 <script>
-    while(1)
-        {
-            var rand = Math.floor(Math.random()*59)+1;
-            if(rand!=12&&rand!=40&&rand!=57)
-            {
-                document.getElementById("a").innerHTML = rand;
-                break;
-            }
-        }
+    var arr = ['800字作文','尼尔斯骑鹅旅行记','别了，语文课','汤姆索亚历险记','鲁滨逊漂流记'];
+    var index = Math.floor((Math.random()*arr.length));
+    console.log(arr[index]);
     function a()
     {
-        while(1)
-        {
-            var rand = Math.floor(Math.random()*59)+1;
-            if(rand!=12&&rand!=40&&rand!=57)
-            {
-                document.getElementById("a").innerHTML = rand;
-                break;
-            }
-        }
+        var arr = ['800字作文','尼尔斯骑鹅旅行记','别了，语文课','汤姆索亚历险记','鲁滨逊漂流记'];
+        var index = Math.floor((Math.random()*arr.length));
+        console.log(arr[index]);
     }
 </script>
 </html>
